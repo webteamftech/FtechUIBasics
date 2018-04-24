@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>UI Typography</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <link rel="stylesheet" href="css/vendor/bootstrap.css">
+        <link rel="stylesheet" href="css/vendor/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/playground.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <header>
+        	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Brand Logo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="form-validation.html">Form Validation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="file-upload.html">File Upload</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="basic-slider.html">Basic Slider</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Components
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="tables.html">Tables</a>
+                                    <a class="dropdown-item" href="tabs.html">Tabs</a>
+                                    <a class="dropdown-item" href="accordions.html">Accordions</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            
+            <div class="form-container col-md-12">
+                <h3 class="primary-text">Sample Form</h3>
+                <form id="sample-form" method="POST" enctype="multipart">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputVersion">Version</label>
+                                <input type="text" class="form-control" id="exampleInputVersion" placeholder="Enter Version" name="version">
+                                <small id="emailHelp" class="form-text text-muted">Enter the version number in the format <b>V.x.x</b> .</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputName">Name</label>
+                                <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Name" name="name_english">
+                            </div>
+                        </div>
+                        <div class="col-md-6">                    
+                            <div class="form-group">
+                                <label for="exampleInputNameArabic">Name Arabic</label>
+                                <input type="text" class="form-control" id="exampleInputNameArabic" placeholder="Enter Name in Arabic" name="name_arabic">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email_address">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                    
+                            <div class="form-group">
+                                <label for="exampleInputDateOfBirth">Date of Birth</label>
+                                <input type="text" class="form-control date-picker date-of-birth-datepicker" id="exampleInputDateOfBirth" placeholder="Select Date of Birth" name="date_of_birth">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="exampleInputGender">Gender</label>
+                            <div class="form-group">                                
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadioMale" value="male">
+                                    <label class="form-check-label" for="inlineRadioMale">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadioFemale" value="female">
+                                    <label class="form-check-label" for="inlineRadioFemale">Female</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlNationality">Nationality</label>
+                                <select class="form-control" id="exampleFormControlNationality" name="nationality">
+                                    <option>United Arab Emirates</option>
+                                    <option>India</option>
+                                    <option>Pakistan</option>
+                                    <option>Oman</option>
+                                    <option>Saudi Arabic</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputPhoneNumber">Contact Number</label>
+                                <input type="text" class="form-control" id="exampleInputPhoneNumber" placeholder="Enter Contact Number" name="phone_number">
+                            </div>
+                        </div>
+                        <div class="col-md-6">                    
+                            <div class="form-group">
+                                <label for="exampleInputEmergencyContactNumber">Emergency Contact Number</label>
+                                <input type="text" class="form-control" id="exampleInputEmergencyContactNumber" placeholder="Select Emirates ID Expiry Date" name="emergency_contact_number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmiratesID">Emirates ID Number</label>
+                                <input type="text" class="form-control" id="exampleInputEmiratesID" placeholder="Enter Emirates ID Number" name="emirates_id_number">
+                            </div>
+                        </div>
+                        <div class="col-md-6">                    
+                            <div class="form-group">
+                                <label for="exampleInputEmiratesIDExpiryDate">Emirates ID Expiry Date</label>
+                                <input type="text" class="form-control date-picker emiratesid-expiry-datepicker" id="exampleInputEmiratesIDExpiryDate" placeholder="Select Emirates ID Expiry Date" name="emirates_id_expiry_date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassportNumber">Passport Number</label>
+                                <input type="text" class="form-control" id="exampleInputPassportNumber" placeholder="Enter Passport Number" name="passport_number">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputUAEPhoneNumber">UAE Phone Number</label>
+                                <input type="text" class="form-control" id="exampleInputUAEPhoneNumber" aria-describedby="uaePhoneNumberHelp" placeholder="Enter UAE Phone Number" name="uae_phone_number">
+                                <span class="uae-number-prefix">+971</span>
+                                <small id="uaePhoneNumberHelp" class="form-text text-muted">Please enter the number after +971</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlAddress">Address</label>
+                                <textarea class="form-control" id="exampleFormControlAddress" rows="3" name="address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlProfilePicture">Profile Picture</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlProfilePicture" name="profile_picture">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submit-sample-form">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Place sticky footer content here.</span>
+            </div>
+        </footer>
+        
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script src="js/vendor/jquery-ui.min.js"></script>
+        <script src="js/vendor/jquery.validate.js"></script>
+        <script src="js/vendor/additional-validation-methods.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+        <script src="js/form-validation.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

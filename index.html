@@ -3,26 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>UI Typography</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/vendor/normalize.css">
-        <link rel="stylesheet" href="css/vendor/jquery-ui.min.css">
-        <link rel="stylesheet" href="css/vendor/slick.css">
         <link rel="stylesheet" href="css/vendor/bootstrap.css">
-
+        <link rel="stylesheet" href="css/playground.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
         <header>
         	<nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
@@ -34,24 +29,29 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="form-validation.html">Form Validation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="file-upload.html">File Upload</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="basic-slider.html">Basic Slider</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
+                                    Components
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#headings-container">Headings</a>
+                                    <a class="dropdown-item" href="#buttons-container">Buttons</a>
+                                    <a class="dropdown-item" href="#alerts-container">Alerts</a>
+                                    <a class="dropdown-item" href="#form-container">Forms</a>
+                                    <a class="dropdown-item" href="#tabs-container">Tabs</a>
+                                    <a class="dropdown-item" href="#accordions-container">Accordions</a>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
@@ -64,33 +64,208 @@
         </header>
 
         <div class="container">
-            <div class="login-form col-md-12">
-                <h2>Login Form :</h2>
-                <form action="#" id="form">
+            <div class="headings-container col-md-12" id="headings-container">
+                <h3 class="primary-text">Headings</h3>
+                <h1>H1 Heading</h1>
+                <h2>H2 Heading</h2>
+                <h3>H3 Heading</h3>
+                <h4>H4 Heading</h4>
+                <h5>H5 Heading</h5>
+                <h6>H6 Heading</h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis,
+                    aliquam at iaculis eu, mi felis, aliquam at iaculis mi felis, aliquam at iaculis finibus eu ex. Integer efficitur tincidunt malesuada.
+                    Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non est rhoncus volutpat.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis,
+                    aliquam at iaculis eu, mi felis, aliquam at iaculis mi felis, aliquam at iaculis finibus eu ex. Integer efficitur tincidunt malesuada.
+                    Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non est rhoncus volutpat.
+                </p>
+            </div>
+            <div class="buttons-container col-md-12" id="buttons-container">
+                <h3 class="primary-text">Buttons</h3>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <div class="alerts-container col-md-12" id="alerts-container">
+                <h3 class="primary-text">Alerts / Notifications</h3>
+                <div class="alert alert-primary" role="alert">
+                    This is a primary alert—check it out! <a href="#" class="alert-link">an example link</a>.
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    This is a secondary alert—check it out!
+                </div>
+                <div class="alert alert-success" role="alert">
+                    This is a success alert—check it out!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    This is a danger alert—check it out!
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    This is a warning alert—check it out!
+                </div>
+                <div class="alert alert-info" role="alert">
+                    This is a info alert—check it out!
+                </div>
+                <div class="alert alert-light" role="alert">
+                    This is a light alert—check it out!
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    This is a dark alert—check it out!
+                </div>
+            </div>
+            <div class="form-container col-md-12" id="form-container">
+                <h3 class="primary-text">Sample Form</h3>
+                <form>
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required="required">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required="required">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" name="remember"> Remember me</label>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                            <label class="form-check-label" for="defaultCheck2">
+                                Disabled checkbox
+                            </label>
+                        </div>
                     </div>
-                    <button type="submit" class="btn fancy-btn">Submit</button>
-                    <button type="reset" class="btn default-btn">Cancel</button>
-
-                    <!-- <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                            <button type="submit" class="btn fancy-btn btn-full">Submit</button>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Default radio
+                            </label>
                         </div>
-                        <div class="col-md-6 col-xs-12">
-                            <button type="button" class="btn default-btn btn-full">Cancel</button>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Second default radio
+                            </label>
                         </div>
-                    </div> -->
-                    
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                            <label class="form-check-label" for="exampleRadios3">
+                                Disabled radio
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Example multiple select</label>
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+            </div>
+            <div class="tabs-container col-md-12" id="tabs-container">
+                <h3 class="primary-text">Tabs</h3>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="accordions-container col-md-12" id="accordions-container">
+                <h3 class="primary-text">Accordions</h3>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                                </button>
+                            </h5>
+                        </div>                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -99,27 +274,9 @@
                 <span class="text-muted">Place sticky footer content here.</span>
             </div>
         </footer>
-
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        
         <script src="js/vendor/jquery-3.2.1.min.js"></script>
-        <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/jquery.validate.js"></script>
-        <script src="js/vendor/additional-methods.js"></script>
         <script src="js/vendor/bootstrap.js"></script>
-        <script src="js/vendor/slick.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <script>
-            $("#form").validate({
-                rules :{
-                    emai:{
-                        required:true,
-                        email:true,
-                    }
-                }
-            });
-        </script>
     </body>
 </html>
