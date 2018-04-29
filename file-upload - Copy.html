@@ -13,9 +13,13 @@
         <link rel="stylesheet" href="css/vendor/jquery-ui.min.css">
         <link rel="stylesheet" href="css/playground.css">
         <link rel="stylesheet" href="css/file-upload.css">
+        <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     </head>
     <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
         <header>
         	<nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
@@ -65,19 +69,28 @@
                     <h3 class="primary-text">Sample File Upload - Upload Files On Click</h3>
                     <div class="field" align="left">
                         <h3>Upload your images</h3>
-                        <input type="file" name="file" multiple>
-
+                        <input type="file" name="file" id="on-click-file-upload" multiple>
                     </div>
-                    <!-- <div id="uploads-one">
-                        <div id="filename"></div>
-                        <div id="progress"></div>
-                        <div id="progressBar"></div>
-                    </div> -->
-                    <div id="uploads"></div>
+                    <div id="uploads-one"></div>
                 </div>
-                
+                <br/>
+                <br/>
+                <!-- <div class="form-container col-md-12">
+                    <h3 class="primary-text">Sample File Upload - Upload Files On Select</h3>
+                    <div class="field" align="left">
+                        <h3>Upload your images</h3>
+                        <input type="file" name="file" id="on-change-file-upload" multiple>
+                    </div>
+                    <div id="uploads-two"></div>
+                </div> -->
             </div>
         </div>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Place sticky footer content here.</span>
+            </div>
+        </footer>
         
         <script src="js/vendor/jquery-3.2.1.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>
